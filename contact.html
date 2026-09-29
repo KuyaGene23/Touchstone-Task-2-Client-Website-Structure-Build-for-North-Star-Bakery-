@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>North Star Bakery - Contact & Pre-Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="bakery-logo.png" alt="North Star Bakery Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <main>
+    <h1>Contact & Pre‑Order Requests</h1>
+
+<figure>
+  <img src="bakery-signature-loaf.jpg" alt="Signature sourdough loaf with a golden crust">
+  <figcaption>Our Signature Loaf — handcrafted daily using local grains.</figcaption>
+</figure>
+
+<div class="contact-grid">
+
+  
+  <section class="form-section">
+    <h2>Place a Pre‑Order</h2>
+
+    <form id="contact-form" action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Customer Information</legend>
+
+       <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+        <p id="name-error" role="alert"></p>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <p id="email-error" role="alert"></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Order Details</legend>
+
+        <label for="pickup">Pickup Date</label>
+        <input id="pickup" name="pickup" type="date" required>
+        <p id="pickup-error" role="alert"></p>
+
+        <label for="request">Request Type</label>
+        <select id="request" name="request" required>
+          <option value="preorder">Pre‑Order</option>
+          <option value="question">General Question</option>
+        </select>
+
+        <label for="product-select" style="margin-top: 0;">Select Bakery Item</label>
+    <select id="product-select">
+      <option value="">-- Choose an item for an estimate --</option>
+      <option value="sourdough">Artisan Sourdough Loaf ($8.00)</option>
+      <option value="baguette">French Baguette ($4.50)</option>
+      <option value="croissant">Butter Croissant ($3.50)</option>
+      <option value="cinnamon-roll">Cinnamon Roll ($4.00)</option>
+      <option value="chocolate-cake">Custom Chocolate Cake ($45.00)</option>
+    </select>
+
+    <label for="product-quantity">Quantity</label>
+    <input id="product-quantity" type="number" min="1" value="1">
+
+    <!-- Live Dynamic Output -->
+    <p id="estimation-summary" style="font-weight: bold; color: #6B3E26; margin-top: 1rem; font-size: 1.1rem;">
+      Estimated Total: <span id="estimate-amount">$0.00</span>
+    </p>
+    </div>
+
+        <label for="details">Item Details</label>
+        <textarea id="details" name="details" required></textarea>
+        <p id="details-error" role="alert"></p>
+
+        <label for="allergy">Allergy Notes</label>
+        <textarea id="allergy" name="allergy"></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <p id="success-message" role="status" aria-live="polite" hidden>
+        Thank you. Your request has been submitted successfully.
+      </p>
+    </form>
+  </section>
+
+  
+  <section class="info-section">
+    <h2>Hours & Location</h2>
+    <p>Monday–Friday: 7:00 AM – 6:00 PM<br>Saturday–Sunday: 8:00 AM – 4:00 PM</p>
+    <p>123 North Star Lane, Your City, ST 00000</p>
+  </section>
+
+</div> 
+
+    <section>
+      <h2>Hours & Location</h2>
+      <p>Monday–Friday: 7:00 AM – 6:00 PM<br>Saturday–Sunday: 8:00 AM – 4:00 PM</p>
+      <p>123 North Star Lane, Your City, ST 00000</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 North Star Bakery</p>
+  </footer>
+  <script src="script.js"></script>
+ </body>
+</html>
